@@ -23,6 +23,13 @@ System.out.println("Ingresa el valor de A: \n" );
  
  System.out.println("Valores de A: " + A + " Valores de B " + B );	
 	
+ if(A>B) {
+	 System.out.println("A es mayor a B");
+	 
+ }else {
+	 System.out.println("A es menor que B");
+	 
+ }
 
 	}
 
