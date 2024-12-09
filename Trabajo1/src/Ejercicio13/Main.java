@@ -1,48 +1,47 @@
 package Ejercicio13;
 import java.util.Scanner;
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingresa las ventas del Departamento 1:");
-        double VD1 = scanner.nextDouble();
+	       
+	        System.out.print("Ingrese el valor de la compra: ");
+	        double valorCompra = scanner.nextDouble();
+	        scanner.nextLine(); 
+	        System.out.print("Ingrese el color de la bolita (Blanco, Verde, Amarillo, Azul, Roja): ");
+	        String colorBolita = scanner.nextLine().toUpperCase();
 
-        System.out.println("Ingresa las ventas del Departamento 2:");
-        double VD2 = scanner.nextDouble();
+	       
+	        double porcentajeDescuento = 0;
 
-        System.out.println("Ingresa las ventas del Departamento 3:");
-        double VD3 = scanner.nextDouble();
+	        
+	        switch (colorBolita) {
+	            case "BLANCO":
+	                porcentajeDescuento = 0;
+	                break;
+	            case "VERDE":
+	                porcentajeDescuento = 10;
+	                break;
+	            case "AMARILLO":
+	                porcentajeDescuento = 25;
+	                break;
+	            case "AZUL":
+	                porcentajeDescuento = 50;
+	                break;
+	            case "ROJA":
+	                porcentajeDescuento = 100;
+	                break;
+	            default:
+	                System.out.println("Color de bolita no válido.");
+	                return; 
+	                }
 
-        System.out.println("Ingresa el salario base de los vendedores:");
-        double SALAR = scanner.nextDouble();
+	        double valorPagar = valorCompra - (porcentajeDescuento * valorCompra / 100);
+	        System.out.println("El cliente debe pagar: $" + valorPagar);
 
-        double TOTVEN = VD1 + VD2 + VD3;
-        double PORVEN = 0.33 * TOTVEN;
+	        scanner.close();	    
+	    //543450, AZUL    
+	    }
+	}
 
-        double SALAR1, SALAR2, SALAR3;
-        if (VD1 > PORVEN) {
-            SALAR1 = SALAR + 0.2 * SALAR;
-        } else {
-            SALAR1 = SALAR;
-        }
 
-        if (VD2 > PORVEN) {
-            SALAR2 = SALAR + 0.2 * SALAR;
-        } else {
-            SALAR2 = SALAR;
-        }
-
-        if (VD3 > PORVEN) {
-            SALAR3 = SALAR + 0.2 * SALAR;
-        } else {
-            SALAR3 = SALAR;
-        }
-
-        System.out.println("Salario vendedores Departamento 1: $" + SALAR1);
-        System.out.println("Salario vendedores Departamento 2: $" + SALAR2);
-        System.out.println("Salario vendedores Departamento 3: $" + SALAR3);
-
-        scanner.close();
-       // 4200000, 250000, 3300000, 380320
-    }
-}
