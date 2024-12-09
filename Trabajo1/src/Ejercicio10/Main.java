@@ -1,4 +1,4 @@
-package Segundo;
+package Ejercicio10;
 import java.util.*;
 public class Main {
 

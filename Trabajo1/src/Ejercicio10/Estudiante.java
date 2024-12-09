@@ -1,4 +1,4 @@
-package Segundo;
+package Ejercicio10;
 
 public class Estudiante {
 	String NI;
