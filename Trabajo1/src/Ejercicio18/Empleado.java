@@ -7,7 +7,7 @@ public class Empleado{
     public static double calcular_salario_bruto(double valor_horas, int horas_trabajadas {
         return valor_horas * horas_trabajadas;
     }
-    public static double calcular_salario_neto(double salario_bruto, double retencion_fuente) {
+    public static double calcular_salario_neto(double salario_bruto, double porcentaje_retencion) {
         return salario_bruto - (porcentaje_retencion * salario_bruto);
     }
 }
