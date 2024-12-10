@@ -8,6 +8,6 @@ public class Triangulo {
         return perimetro/2;
     }
     public static double calcular_area(double lado_1, double lado_2, double lado_3, double semiperimetro) {
-        return Math.sqrt(semiperimetro * (semiperimetro-lado_1)*(semiperimetro-lado_2)(semiperimetro-lado_3));
+        return Math.sqrt(semiperimetro * (semiperimetro-lado_1)*(semiperimetro-lado_2)*(semiperimetro-lado_3));
     }
 }
