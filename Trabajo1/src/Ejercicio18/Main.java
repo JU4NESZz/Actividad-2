@@ -7,7 +7,10 @@ class Main {
         System.out.println("Ingrese el codigo del empleado");
         double codigo_empleado = sc.nextDouble();
         System.out.println("Ingrese el nombre del empleado");
-        String nombre = sc.nextLine();
+        String nombre = sc.next();
+        System.out.println("Ingrese el apellido del empleado");
+        String apellido = sc.next();
+        String nombre_completo = nombre + " " + apellido
         System.out.println("Ingrese el numero de horas trabajadas");
         int horas_trabajadas = sc.nextInt();
         System.out.println("Ingrese el valor por hora trabajada");
