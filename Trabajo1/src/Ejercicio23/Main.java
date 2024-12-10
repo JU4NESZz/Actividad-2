@@ -6,7 +6,7 @@ class Main {
         Scanner sc = new Scanner (System.in);
         
         System.out.println("Ingrese el valor de a:");
-        double a = sc.nextDouble
+        double a = sc.nextDouble();
 
         while (a == 0) {
             System.out.println("El valor de a debe ser diferente de 0 para que sea una ecuación de segundo grado.");
@@ -21,5 +21,7 @@ class Main {
         double c = sc.nextDouble();
         
         solucion = CalculoEcuacionSegundoGrado.calcularSoluciones(a, b, c);
+
+        sc.close();
     }
 }
