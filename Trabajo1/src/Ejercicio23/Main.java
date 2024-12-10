@@ -20,7 +20,7 @@ class Main {
         System.out.println("Ingrese el valor de c:");
         double c = sc.nextDouble();
         
-        solucion = CalculoEcuacionSegundoGrado.calcularSoluciones(a, b, c);
+        CalculoEcuacionSegundoGrado.calcularSoluciones(a, b, c);
 
         sc.close();
     }
