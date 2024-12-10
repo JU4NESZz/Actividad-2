@@ -12,7 +12,7 @@ class Main {
         System.out.println("Ingrese el peso de la esfera C:");
         double c = sc.nextDouble();
         
-        Esferas.compara_pesos(a, b, c);
+        Esferas.comparar_pesos(a, b, c);
 
         sc.close();
     }
