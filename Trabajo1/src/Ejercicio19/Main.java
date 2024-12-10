@@ -8,13 +8,15 @@ import java.util.Scanner;
 	        System.out.println("Ingrese el valor de un lado");
 	        double lado = sc.nextDouble();
 	        
-	        altura = triangulo_equilatero.calcular_altura(lado);
-	        perimetro = triangulo_equilatero.calcular_perimetro(lado);
-	        area = triangulo_equilatero.calcular_area(lado);
+	        altura = Triangulo_equilatero.calcular_altura(lado);
+	        perimetro = Triangulo_equilatero.calcular_perimetro(lado);
+	        area = Triangulo_equilatero.calcular_area(lado);
 	        
 	        System.out.println("La altura del triangulo es: " + altura);
 	        System.out.println("Su perimetro es: " + perimetro);
 	        System.out.println("Y su area es: " + area);
+
+		sc.close();
 	    }
 	}
 
