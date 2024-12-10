@@ -15,9 +15,9 @@ class Main {
         System.out.println("Ingrese el porcentaje de la retencion");
         double retencion_fuente = sc.nextFloat();
         
-        double porcentaje_retencion =             Empleado.calcular_porcentaje_retencion(retencion_fuente);
+        double porcentaje_retencion = Empleado.calcular_porcentaje_retencion(retencion_fuente);
         double salario_bruto = Empleado.calcular_salario_bruto(valor_horas, horas_trabajadas);
-        double salario_neto = Empleado.calcular_salario_neto(porcentaje_retencion, salario_neto);
+        double salario_neto = Empleado.calcular_salario_neto(salario_bruto, porcentaje_retencion);
         
         System.out.println("Empleado: " + codigo_empleado);
         System.out.println("Nombre: " + nombre);
