@@ -12,7 +12,9 @@ class Main {
         System.out.println("Ingrese el numero de horas trabajadas:");
         int numero_horas = sc.nextInt();
         
-        salario = Empleado.calcular_salario(salario_hora, numero_horas);
-        empleado = Empleado.empleado(salario, nombre);
+        double salario = Empleado.calcular_salario(salario_hora, numero_horas);
+        Empleado.mostrar_informacion_empleado(salario, nombre);
+
+        sc.close();
     }
 }
