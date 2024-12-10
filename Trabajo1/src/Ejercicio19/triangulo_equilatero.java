@@ -1,10 +1,10 @@
 package Ejercicio19;
 
-public class triangulo_equilatero {
+public class Triangulo_equilatero {
 	
 	
 	public static double calcular_altura(double lado) {
-        return (lado + Math.sqrt(3)) / 2;
+        return (lado * Math.sqrt(3)) / 2;
     }
     public static double calcular_perimetro(double lado) {
         return lado * 3;
