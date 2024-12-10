@@ -23,7 +23,7 @@ class Main {
         double salario_neto = Empleado.calcular_salario_neto(salario_bruto, porcentaje_retencion);
         
         System.out.println("Empleado: " + codigo_empleado);
-        System.out.println("Nombre: " + nombre);
+        System.out.println("Nombre: " + nombre_completo);
         System.out.println("Salario bruto: " + salario_bruto);
         System.out.println("Salario neto: " + salario_neto);
     }
